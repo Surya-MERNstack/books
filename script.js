@@ -9,9 +9,14 @@ async function fetchingBooks() {
        return  response.json()
     })).then(
         ((data) => {
+            let heading = document.createElement('h1');
+            heading.textContent = 'BOOKS'
+            heading.setAttribute('id','heading')
             data.map((items) => {
             let displaybooks = document.getElementById('bookList');
             displaybooks.innerHTML += " ";
+            
+            
 
             //creating the div with class name book
             let bookscontainer = document.createElement('div');
@@ -57,6 +62,7 @@ async function fetchingBooks() {
              bookscontainer.appendChild(character); 
              
              displaybooks.appendChild(bookscontainer)
+             displaybooks.appendChild(heading)
           
             const searchInput = document.getElementById('search');
       searchInput.addEventListener('keyup', event => {

@@ -1,6 +1,4 @@
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -32,14 +30,27 @@ body {
     border-radius: 10px;
 }
   
+
+#heading{
+  position: absolute;
+  color: black; 
+  top: 0;
+  font-size: 5rem;
+  background-image: url(books_1.jpeg);
+  background-position: center ;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 #search {
     width: 50%;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 65px;
     margin-bottom: 20px;
     font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     text-align: bottom;
     margin-left: 25%;
     height: 3rem;
@@ -47,23 +58,24 @@ body {
     color: black;
     font-size: 1.2rem;
     box-shadow: #eeecec59 0px 5px 15px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.393);
     outline: none;
     font-family:  sans-serif;
-        border: 1.4px solid white;
-        border-image: repeating-linear-gradient(135deg,#ff0606 0 10px,#ff0606 0 20px,#ff0606 0 30px) 8;
+        border: 2px solid white;
+        border-image: repeating-linear-gradient(135deg,#55ff06 0 10px,#55ff06 0 20px,#55ff06 0 30px) 8;
         -webkit-mask:
-        conic-gradient(from 180deg at top 8px right 8px, #ff0606 90deg,#ff0606 0)
+        conic-gradient(from 180deg at top 8px right 8px, #55ff06 90deg,#55ff06 0)
            var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
-          conic-gradient(at bottom 8px left  8px,  #ff0606 90deg,#ff0606 0)
+          conic-gradient(at bottom 8px left  8px,  #55ff06 90deg,#55ff06 0)
            0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-          linear-gradient(#ff0606 0 0) padding-box no-repeat;
+          linear-gradient(#55ff06 0 0) padding-box no-repeat;
         transition: .3s, -webkit-mask-position .3s .3s;
-      
+       
       }
 #search:hover {
         --_i: 100%;
         color: #ffffff;
+        background: transparent;
         transition: .3s, -webkit-mask-size .3s .3s;
 }
 
@@ -76,7 +88,7 @@ body {
     border: none;
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background-color: rgba(255, 255, 255, 0.22);
+    background-color: rgba(243, 242, 242, 0.395);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
@@ -105,6 +117,7 @@ body {
     margin: 0.5rem 0;
     text-align: center;
     text-decoration: underline;
+    color:rgb(199, 67, 67);
   }
 
   .book h3 {
@@ -112,6 +125,8 @@ body {
     margin: 0.5rem 0;
     text-align: center;
     font-weight: 700;
+    /* color: dodgerblue; */
+    color: rgb(239, 224, 172);
     text-decoration: underline;
   }
   
@@ -124,6 +139,7 @@ body {
     text-align: center;
     font-family:  Arial;
     font-weight: 540;
+    color: rgba(255, 255, 255, 0.980);
   }
   
 
