@@ -1,0 +1,131 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('wood_!.avif');
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+#bookList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: transparent;
+    background-size: cover;
+    color: #121010;
+    object-fit: center;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+  
+#search {
+    width: 50%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    text-align: bottom;
+    margin-left: 25%;
+    height: 3rem;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    box-shadow: #eeecec59 0px 5px 15px;
+    background: transparent;
+    outline: none;
+    font-family:  sans-serif;
+        border: 1.4px solid white;
+        border-image: repeating-linear-gradient(135deg,#ff0606 0 10px,#ff0606 0 20px,#ff0606 0 30px) 8;
+        -webkit-mask:
+        conic-gradient(from 180deg at top 8px right 8px, #ff0606 90deg,#ff0606 0)
+           var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+          conic-gradient(at bottom 8px left  8px,  #ff0606 90deg,#ff0606 0)
+           0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+          linear-gradient(#ff0606 0 0) padding-box no-repeat;
+        transition: .3s, -webkit-mask-position .3s .3s;
+      
+      }
+#search:hover {
+        --_i: 100%;
+        color: #ffffff;
+        transition: .3s, -webkit-mask-size .3s .3s;
+}
+
+/* Style for each book container */
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    filter: blur(1.4px);
+    transition: 0.80s;
+    font-weight: 520;
+    background-image: url();
+    animation: animateTop 0.2s linear infinite;
+  }
+  
+  .book:hover {
+    transition: 0.95s;
+    filter: blur(0);
+  }
+
+/* Hover effect on each book container */
+
+  .book:hover {
+    transform: translateY(-5px);
+}
+  
+/* Style for the book title */
+
+  .book h2 {
+    font-size: 1.7rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .book h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  
+  /* Style for the book details */
+
+  .book p {
+    margin: 0.15rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family:  Arial;
+    font-weight: 540;
+  }
+  
+
+  
+  
