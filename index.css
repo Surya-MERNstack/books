@@ -62,13 +62,13 @@ body {
     outline: none;
     font-family:  sans-serif;
         border: 2px solid white;
-        border-image: repeating-linear-gradient(135deg,#55ff06 0 10px,#55ff06 0 20px,#55ff06 0 30px) 8;
+        border-image: repeating-linear-gradient(135deg,#ff0606 0 10px,#ff0606 0 20px,#ff0606 0 30px) 8;
         -webkit-mask:
-        conic-gradient(from 180deg at top 8px right 8px, #55ff06 90deg,#55ff06 0)
+        conic-gradient(from 180deg at top 8px right 8px, #ff0606 90deg,#ff0606 0)
            var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
-          conic-gradient(at bottom 8px left  8px,  #55ff06 90deg,#55ff06 0)
+          conic-gradient(at bottom 8px left  8px,  #ff0606 90deg,#ff0606 0)
            0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-          linear-gradient(#55ff06 0 0) padding-box no-repeat;
+          linear-gradient(#ff0606 0 0) padding-box no-repeat;
         transition: .3s, -webkit-mask-position .3s .3s;
        
       }
