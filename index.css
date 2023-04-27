@@ -6,7 +6,9 @@
 }
 
 body {
-    background-image: url('wood_!.avif');
+    background-image: url('book_2.avif');
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .container {
@@ -36,47 +38,50 @@ body {
   color: black; 
   top: 0;
   font-size: 5rem;
-  background-image: url(books_1.jpeg);
-  background-position: center ;
+  background-image: linear-gradient(to right, white,rgb(65, 54, 65));
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
+#heading:hover {
+  filter: blur(2px);
+}
+
 #search {
     width: 50%;
     padding: 10px;
-    margin-top: 65px;
+    margin-top: 85px;
     margin-bottom: 20px;
     font-size: 16px;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     text-align: bottom;
     margin-left: 25%;
     height: 3rem;
     cursor: pointer;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
-    box-shadow: #eeecec59 0px 5px 15px;
-    background: rgba(255, 255, 255, 0.393);
+    box-shadow: #ffffff 0px 5px 15px;
+    background: transparent;
     outline: none;
     font-family:  sans-serif;
-        border: 2px solid white;
-        border-image: repeating-linear-gradient(135deg,#ff0606 0 10px,#ff0606 0 20px,#ff0606 0 30px) 8;
+        border: 1.5px solid white;
+        border-image: repeating-linear-gradient(135deg,#258d06 0 10px,#258d06 0 20px,#258d06 0 30px) 8;
         -webkit-mask:
-        conic-gradient(from 180deg at top 8px right 8px, #ff0606 90deg,#ff0606 0)
+        conic-gradient(from 180deg at top 8px right 8px, #258d06 90deg,#258d06 0)
            var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
-          conic-gradient(at bottom 8px left  8px,  #ff0606 90deg,#ff0606 0)
+          conic-gradient(at bottom 8px left  8px,  #258d06 90deg,#258d06 0)
            0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-          linear-gradient(#ff0606 0 0) padding-box no-repeat;
-        transition: .3s, -webkit-mask-position .3s .3s;
+          linear-gradient(#258d06 0 0) padding-box no-repeat;
+        transition: .3s, -webkit-mask-position .2s .4s;
        
       }
 #search:hover {
         --_i: 100%;
         color: #ffffff;
         background: transparent;
-        transition: .3s, -webkit-mask-size .3s .3s;
+        transition: .5s, -webkit-mask-size .5s .5s;
 }
 
 /* Style for each book container */
@@ -88,20 +93,20 @@ body {
     border: none;
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background-color: rgba(243, 242, 242, 0.395);
+    background-color: rgba(243, 242, 242, 0.463);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     filter: blur(1.4px);
     transition: 0.80s;
     font-weight: 520;
-    background-image: url();
-    animation: animateTop 0.2s linear infinite;
   }
   
   .book:hover {
     transition: 0.95s;
     filter: blur(0);
+    box-shadow: rgb(246, 245, 245) 0px 5px 15px 0px;
+    background-color: rgba(252, 252, 252, 0.986);
   }
 
 /* Hover effect on each book container */
@@ -117,8 +122,10 @@ body {
     margin: 0.5rem 0;
     text-align: center;
     text-decoration: underline;
-    color:rgb(199, 67, 67);
+    color:rgb(202, 37, 37);
   }
+
+ 
 
   .book h3 {
     font-size: 1.3rem;
@@ -126,7 +133,7 @@ body {
     text-align: center;
     font-weight: 700;
     /* color: dodgerblue; */
-    color: rgb(239, 224, 172);
+    color: rgb(231, 127, 119);
     text-decoration: underline;
   }
   
@@ -139,9 +146,11 @@ body {
     text-align: center;
     font-family:  Arial;
     font-weight: 540;
-    color: rgba(241, 220, 220, 0.98);
+    color: rgba(0, 0, 0, 0.98);
   }
   
+
+
 
   
   
