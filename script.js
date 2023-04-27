@@ -34,7 +34,7 @@ async function fetchingBooks() {
       characterName.textContent = 'Characters';
       const character = document.createElement('p');
 
-      for (const charUrl of book.characters.slice(0, 10)) {
+      for (const charUrl of book.characters.slice(0, 15)) {
         const charRes = await fetch(charUrl);
         const charData = await charRes.json();
         character.textContent += `${charData.name}, `;
